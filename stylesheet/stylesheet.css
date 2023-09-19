@@ -5,6 +5,7 @@
     --body-height: calc(100vh - var(--footer-height) - var(--header-height));
     --footer-height: 30px;
     --header-height: 30px;
+    --header-footer-color: #23093f;
 }
 
 * {
@@ -20,7 +21,7 @@
 .float-container{
     position: absolute;
     display: flex;
-    background-color: orange;
+    background-color: #300b58;
     width: 100%;
     top: 60%;
     opacity: .5;
@@ -38,6 +39,12 @@
 
 
 
+input, form, label {
+    display: table;
+    table-layout: fixed;
+    
+}
+
 
 
 #left-half {
@@ -52,21 +59,45 @@
 
 
 #right-half {
-    justify-content: center;
+    align-content: center;
+    text-align: center;
     position: relative;
     flex: 1;
     display: flex;
     background-color: var(--page-color);
-    height: var(--body-height)
+    height: var(--body-height);
+    flex-direction: column;
 }
 
 #footer {
     flex: 1;
     height: var(--footer-height);
     display: flex;
+    background-color: var(--header-footer-color);
 }
 
 #header {
     position: relative;
-    height: var(--header-height)
+    height: var(--header-height);
+    background-color: var(--header-footer-color);
 }
+
+table {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: start;
+    margin-top: 38vh;
+    align-items: center;
+    background-color: var(--header-footer-color);
+}
+
+td {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+input {
+    color: black;
+}
+

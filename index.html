@@ -8,7 +8,7 @@
 </head>
 <body>
 <div id="header">
-    Hello
+
 </div>
 <div id="container">
     <div id="left-half">
@@ -17,12 +17,49 @@
         <img src="resources/melusine.gif">
     </div>
     <div id="right-half">
-        <h1>This is example text that will be used to further dictate the design of this document.</h1>
+        <h1>Register your account and experience paradise!</h1>
+        <table>
+                <form method="get">
+                <tr>
+                    <td>
+                        <label for="fname">First Name:</label>
+                        <input required placeholder="John" type="text" id="fname" name="fname">
+                    </td>
+                    <td>
+                        <label for="lname">Last Name:</label>
+                        <input required placeholder="Smith" type="text" id="lname" name="lname">
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                        <input  required placeholder="JohnSmith@gmail.com" type="email" id="email" name="email">
+                    </td>
+                    <td>
+                        <label for="phone">Phone Number:</label> 
+                        <input required placeholder="xxx-xxx-xxxx" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    </td>
+                    <td class="submitButton"><input  type="submit" class="test" value="Confirm"></td>
+
+            </tr>
+                    <td>
+                        <label for="pass">Password:</label>
+                        <input type="password" id="pass" name="pass" required>
+                    </td>
+                    <td>
+                        <label for="lname">Confirm Password:</label>
+                        <input type="password" id="confirmPass" name="cPass" required>
+                    </td>
+                </table>
+
+
+                </form>
     </div>
 
 </div>
 <div id="footer">
-    hello world
+    
 </div>
+<script src="javascript/javascript.js"></script>
 </body>
 </html>
