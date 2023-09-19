@@ -1,2 +1,72 @@
 @import url("../node_modules/normalize.css/normalize.css");
 
+:root {
+    --page-color: #180131; 
+    --body-height: calc(100vh - var(--footer-height) - var(--header-height));
+    --footer-height: 30px;
+    --header-height: 30px;
+}
+
+* {
+    color: white;
+}
+
+#container {
+    display: flex;
+    background-color: red;
+}
+
+
+.float-container{
+    position: absolute;
+    display: flex;
+    background-color: orange;
+    width: 100%;
+    top: 60%;
+    opacity: .5;
+    height: 20px;
+}
+
+.span-text {
+    position: absolute;
+    top: 60%;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+
+
+
+
+#left-half {
+    position: relative;
+    display: flex;
+    background-color: var(--page-color);
+    width: 30vw;
+    justify-content: center;
+    height: var(--body-height)
+}
+
+
+
+#right-half {
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    display: flex;
+    background-color: var(--page-color);
+    height: var(--body-height)
+}
+
+#footer {
+    flex: 1;
+    height: var(--footer-height);
+    display: flex;
+}
+
+#header {
+    position: relative;
+    height: var(--header-height)
+}
